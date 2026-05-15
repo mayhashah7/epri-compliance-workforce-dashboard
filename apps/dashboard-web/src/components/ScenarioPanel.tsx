@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { postJson, type Substation } from '../lib/api';
 
 const SCENARIOS = [
-  { id: 'storm-outage',     label: '⛈️ Storm Outage',         agent: 'outage-detection',       hint: 'Knocks a feeder offline' },
-  { id: 'theft',            label: '🕵️ Theft Pattern',        agent: 'theft-detection',        hint: 'Plant tampers + flat reads' },
-  { id: 'der-overvoltage',  label: '☀️ Solar Backfeed',       agent: 'der-management',         hint: 'Volt-VAR risk on secondaries' },
-  { id: 'heat-wave',        label: '🔥 Heat Wave',            agent: 'demand-response',        hint: 'Trigger DR cohort selection' },
-  { id: 'transformer-aging',label: '🔧 Transformer Aging',    agent: 'predictive-maintenance', hint: 'Score asset health' },
-  { id: 'cyber-burst',      label: '🛡️ Cyber Anomaly',        agent: 'grid-cybersecurity',     hint: 'Unauthorized firmware queries' },
-  { id: 'ev-surge',         label: '🔌 EV Plug-in Surge',     agent: 'ev-load-orchestration',  hint: 'Evening EV charging burst' },
-  { id: 'weather-alert',    label: '🌦️ Weather Alert',         agent: 'weather-impact',         hint: 'Heat warning + storm watch' },
+  { id: 'nerc-question', label: 'NERC CIP Question', agent: 'cwm-compliance-doc-retrieval', hint: 'What does CIP-013-2 say about supply-chain risk?' },
+  { id: 'violation-draft', label: 'Self-Report Draft', agent: 'cwm-violation-report-creation', hint: 'Draft a self-report for the PRC-005 missed maintenance' },
+  { id: 'outage-report', label: 'PUC Outage Report', agent: 'cwm-outage-regulatory-reporting', hint: 'Generate the May major-event-day filing for PUC' },
+  { id: 'code-conflict', label: 'Code Conflict', agent: 'cwm-codes-standards-interpretation', hint: 'Reconcile NESC vs IEEE 516 on hot-stick clearance' },
+  { id: 'crew-question', label: 'Crew Q&A', agent: 'cwm-virtual-training-assistant', hint: 'How do I isolate a faulted feeder during back-feed conditions?' },
+  { id: 'course-create', label: 'Build Training Course', agent: 'cwm-training-course-creation', hint: 'Build a 4-hour course on URD splicing from manual M-118' },
+  { id: 'safety-pattern', label: 'Safety Pattern', agent: 'cwm-safety-report-analysis', hint: 'Find recurring near-miss patterns in last 90 days' },
+  { id: 'storm-deploy', label: 'Storm Deployment Plan', agent: 'cwm-post-storm-crew-deployment', hint: 'Plan crew deployment for 380 outages across 14 districts' },
 ];
 
 export function ScenarioPanel({ onRan, substations }: { onRan: () => void; substations: Substation[] }) {
@@ -47,7 +47,7 @@ export function ScenarioPanel({ onRan, substations }: { onRan: () => void; subst
             title={s.hint}
           >
             <div className="text-xs font-medium text-grid-accent leading-tight">{busy === s.id ? '⏳' : s.label}</div>
-            <div className="text-xs text-grid-info font-mono mt-0.5">→ ami-{s.agent}</div>
+            <div className="text-xs text-grid-info font-mono mt-0.5">→ {s.agent}</div>
             <div className="text-xs text-slate-500 mt-0.5 line-clamp-1">{s.hint}</div>
           </button>
         ))}

@@ -1,4 +1,4 @@
 name: cwm-violation-report-creation
 model: gpt-5-mini
-description: Drafts compliance violation reports from operational data + audit findings, filling regulatory templates with citations and timelines.
+description: "Drafts compliance violation reports from operational data + audit findings, filling regulatory templates with citations and timelines."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

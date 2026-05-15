@@ -1,4 +1,4 @@
 name: cwm-codes-standards-interpretation
 model: gpt-5
-description: Interprets utility-specific codes / tariffs using NLP + knowledge representation. Surfaces overlapping standards and jurisdictional precedent.
+description: "Interprets utility-specific codes / tariffs using NLP + knowledge representation. Surfaces overlapping standards and jurisdictional precedent."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

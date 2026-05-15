@@ -1,4 +1,4 @@
 name: cwm-field-experience-synthesis
 model: gpt-5
-description: Synthesizes field-work operational experience from work-order narratives, lessons-learned databases, and crew debriefs into reusable guidance.
+description: "Synthesizes field-work operational experience from work-order narratives, lessons-learned databases, and crew debriefs into reusable guidance."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

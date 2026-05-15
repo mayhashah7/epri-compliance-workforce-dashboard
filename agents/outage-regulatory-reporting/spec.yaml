@@ -1,4 +1,4 @@
 name: cwm-outage-regulatory-reporting
 model: gpt-5-mini
-description: Auto-generates regulatory outage reports from OMS, customer complaints, and restoration logs. Calculates reliability metrics per state-commission templates.
+description: "Auto-generates regulatory outage reports from OMS, customer complaints, and restoration logs. Calculates reliability metrics per state-commission templates."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

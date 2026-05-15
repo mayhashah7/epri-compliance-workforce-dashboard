@@ -1,4 +1,4 @@
 name: cwm-engineering-knowledge-retrieval
 model: gpt-5-chat
-description: Semantic search and recommendation across design standards, technical manuals, and project archives. Surfaces related concepts and best practices.
+description: "Semantic search and recommendation across design standards, technical manuals, and project archives. Surfaces related concepts and best practices."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

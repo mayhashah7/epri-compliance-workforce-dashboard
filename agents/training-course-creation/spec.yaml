@@ -1,4 +1,4 @@
 name: cwm-training-course-creation
 model: gpt-5-mini
-description: Generates structured training modules + quizzes + scenarios from technical manuals. Tailors to role and proficiency level.
+description: "Generates structured training modules + quizzes + scenarios from technical manuals. Tailors to role and proficiency level."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

@@ -1,4 +1,4 @@
 name: cwm-post-storm-crew-deployment
 model: gpt-5
-description: Optimizes post-storm crew deployment using damage model, crew skills, equipment availability, and accessibility (road blockages).
+description: "Optimizes post-storm crew deployment using damage model, crew skills, equipment availability, and accessibility (road blockages)."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

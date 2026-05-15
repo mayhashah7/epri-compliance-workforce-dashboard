@@ -1,0 +1,4 @@
+name: cwm-virtual-training-assistant
+model: gpt-5-chat
+description: LLM converts safety protocols, asset guides, and SOPs into role-specific, on-demand training. Q&A like 'how do I isolate a faulted feeder?'
+tools: [open_case, list_recent_events, get_substation_status, query_meters]

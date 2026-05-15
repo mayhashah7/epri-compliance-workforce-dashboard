@@ -1,0 +1,4 @@
+name: cwm-compliance-doc-retrieval
+model: gpt-5-chat
+description: RAG over FERC, NERC CIP, IEEE, internal SOPs. Extracts requirements, deadlines, obligations and surfaces compliance recommendations.
+tools: [open_case, list_recent_events, get_substation_status, query_meters]

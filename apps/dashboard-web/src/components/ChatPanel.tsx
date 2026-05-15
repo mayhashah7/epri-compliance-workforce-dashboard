@@ -6,22 +6,22 @@ type Persona = 'operator' | 'planner' | 'customer';
 
 const STARTERS: Record<Persona, string[]> = {
   operator: [
-    'Are there any outages right now on substation S-01?',
-    'Find suspicious meters that look like theft on S-02.',
-    'Show me solar backfeed and Volt-VAR risk on S-04.',
-    'Score transformer health on substation S-03.',
+    "Walk me through the NERC CIP-007 patch management requirement.",
+    "Draft a self-report for the missed quarterly vulnerability scan.",
+    "Pull the safety-incident pattern for the last 90 days.",
+    "Mobilize crews for the storm response and log compliance hours."
   ],
   planner: [
-    'Plan a 5 MW demand response event for the next hour.',
-    'Which transformers need urgent inspection on S-05?',
-    'How many DER meters are over-voltage on S-04?',
-    'Stage a heat-wave demand response across opt-in residential.',
+    "Build a 60-minute training module on PRC-005 maintenance.",
+    "Identify code conflicts between NERC CIP-005 and our internal SOP-12.",
+    "Generate the PUC outage report for last month's events.",
+    "Forecast workforce gaps for the 2027 storm season."
   ],
   customer: [
-    'Why was my August bill higher than July?',
-    "Is my power back on? My meter is on substation S-01.",
-    'Should I switch to a time-of-use tariff?',
-    'How does my usage compare to my neighbors?',
+    "How do I report a safety hazard near my home?",
+    "What training do your line crews complete each year?",
+    "Is the work in my neighborhood being done safely?",
+    "Where can I find your published reliability reports?"
   ],
 };
 

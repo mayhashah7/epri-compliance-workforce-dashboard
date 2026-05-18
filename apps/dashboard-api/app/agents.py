@@ -280,7 +280,7 @@ async def auto_dispatch_for_event(event: dict) -> None:
     template = EVENT_TO_PROMPT.get(kind)
     if not template:
         return
-    prompt = template.format(substation_id=sub_id)
+    prompt = template[0] if isinstance(template, tuple) else template.format(substation_id=sub_id)
     try:
         async for evt in runner.chat(text=prompt, persona="system", case_id=None):
             t = evt.get("type")

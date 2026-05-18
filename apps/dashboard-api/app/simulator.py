@@ -320,3 +320,14 @@ SCENARIOS = {
     "safety-pattern": scenario_safety_pattern,
     "storm-deploy": scenario_storm_deploy,
 }
+
+SCENARIO_META = [
+    {"id": "nerc-question",  "label": "📋 NERC CIP Q&A",        "agent": "cwm-compliance-doc-retrieval",     "hint": "What does CIP-013-2 say about supply-chain risk?"},
+    {"id": "violation-draft","label": "📝 Self-Report Draft",   "agent": "cwm-violation-report-creation",    "hint": "Draft a self-report for the PRC-005 missed maintenance"},
+    {"id": "outage-report",  "label": "📊 PUC Outage Report",   "agent": "cwm-outage-regulatory-reporting",  "hint": "Generate the May major-event-day filing for PUC"},
+    {"id": "code-conflict",  "label": "⚖️ Code Conflict",       "agent": "cwm-codes-standards-interpretation","hint": "Reconcile NESC vs IEEE 516 on hot-stick clearance"},
+    {"id": "crew-question",  "label": "👷 Crew Q&A",            "agent": "cwm-virtual-training-assistant",   "hint": "How do I isolate a faulted feeder during back-feed?"},
+    {"id": "course-create",  "label": "🎓 Build Training",      "agent": "cwm-training-course-creation",     "hint": "Build a 4-hour course on URD splicing from manual M-118"},
+    {"id": "safety-pattern", "label": "🦺 Safety Pattern",      "agent": "cwm-safety-report-analysis",       "hint": "Find recurring near-miss patterns in last 90 days"},
+    {"id": "storm-deploy",   "label": "🌀 Storm Deployment",    "agent": "cwm-post-storm-crew-deployment",   "hint": "Plan crew deployment for 380 outages across 14 districts"},
+]
